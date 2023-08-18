@@ -36,7 +36,7 @@ const Form = ({ type, prompt, setPrompt, isSubmitting, handleSubmit }) => {
           <input
             value={prompt.tag}
             onChange={(e) => setPrompt({ ...prompt, tag: e.target.value })}
-            placeholder='#Tag'
+            placeholder='Tag'
             required
             className='form_input' />
         </label>

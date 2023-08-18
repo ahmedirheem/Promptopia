@@ -43,7 +43,7 @@ const Navbar = () => {
               Sign Out
             </button>
 
-            <Link href='/profile'>
+            <Link href={`/profile/${session?.user.id}?name=${(session?.user.name).replace(' ', '').toLowerCase()}`}>
               <Image
                 src={session?.user.image}
                 width={37}
