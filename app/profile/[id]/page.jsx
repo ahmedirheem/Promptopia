@@ -56,7 +56,7 @@ const UserProfile = ({ params }) => {
     {
       session?.user.id === params.id ? (
         <Profile
-          name={userName}
+          name='My'
           prompts={userPrompts}
           desc={`Welcome to ${userName}'s personalized profile page. Explore ${userName}'s exceptional prompts and be inspired by the power of their imagination`}
           handleEdit={handleEdit}
